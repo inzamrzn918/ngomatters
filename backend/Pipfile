@@ -4,7 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-fastapi = "*"
+python-decouple = "*"
+fastapi = {version = "*", extras = ["all"]}
+pytz = "*"
+psycopg2 = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
